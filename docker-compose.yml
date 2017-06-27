@@ -1,0 +1,53 @@
+
+version: "2.1"
+
+services:
+  nginx:
+    build:
+      context: ./docker/nginx
+      args:
+        - local_host_ip=${LOCAL_HOST_IP}
+    environment:
+      - LOCAL_HOST_IP=${LOCAL_HOST_IP}
+    extra_hosts:
+          - "dev.docker-host.com:${LOCAL_HOST_IP}"
+    ports:
+      - "80:80"
+    links:
+      - "php"
+    volumes:
+      - ${WS_PATH}:/cyphp
+
+  php:
+    build:
+      context: ./docker/php
+      args:
+        - local_host_ip=${LOCAL_HOST_IP}
+    environment:
+      - LOCAL_HOST_IP=${LOCAL_HOST_IP}
+    extra_hosts:
+      - "dev.docker-host.com:${LOCAL_HOST_IP}"
+    ports:
+      - "8000:8000"
+    #  - "9000:9000"
+    links:
+       - "mysql"
+      # - "redis"
+    volumes:
+      - ${WS_PATH}:/cyphp
+
+  mysql:
+      build: ./docker/mysql
+      environment:
+          - MYSQL_USER=root
+          - MYSQL_ALLOW_EMPTY_PASSWORD=true
+      ports:
+          - "3306:3306"
+      volumes:
+          - ${WS_PATH}/data/mysql:/var/lib/mysql
+
+  # redis:
+  #   build: ./redis
+  #   ports:
+  #     - "6379:6379"
+

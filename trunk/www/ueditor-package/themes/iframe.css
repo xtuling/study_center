@@ -1,0 +1,77 @@
+/*重置样式*/
+/*导航部分*/
+.uedit-summernote .edui-editor-toolbarbox{
+  -webkit-box-shadow:none !important;
+  box-shadow:none !important;;
+}
+.uedit-summernote .edui-editor-toolbarboxouter{
+  -webkit-box-shadow:none !important;;
+  box-shadow:none !important;;
+  background: #fff !important;;
+}
+.uedit-summernote .edui-editor-toolbarboxinner  .edui-toolbar .edui-button .edui-button-wrap{
+  opacity: .5;
+}
+.uedit-summernote .edui-editor-toolbarboxinner  .edui-toolbar .edui-button .edui-button-wrap:hover{
+  background: #fff;
+}
+.uedit-summernote .edui-editor-toolbarboxinner  .edui-toolbar .edui-splitbutton .edui-state-checked .edui-splitbutton-body,
+.uedit-summernote .edui-editor-toolbarboxinner  .edui-toolbar .edui-menubutton .edui-state-checked .edui-menubutton-body,
+.uedit-summernote .edui-editor-toolbarboxinner  .edui-toolbar .edui-state-checked .edui-combox-body,
+.uedit-summernote .edui-editor-toolbarboxinner  .edui-toolbar .edui-button .edui-state-checked .edui-button-wrap{
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  opacity: 1;
+}
+.uedit-summernote .edui-editor-toolbarboxinner  .edui-toolbar .edui-splitbutton .edui-state-active .edui-splitbutton-body,
+.uedit-summernote .edui-editor-toolbarboxinner  .edui-toolbar .edui-menubutton .edui-state-active .edui-menubutton-body,
+.uedit-summernote .edui-editor-toolbarboxinner  .edui-toolbar .edui-state-active .edui-combox-body,
+.uedit-summernote .edui-editor-toolbarboxinner  .edui-toolbar .edui-button .edui-state-active .edui-button-wrap{
+  background-color: #fff;
+  border-color: #fff;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  box-shadow: none;
+  opacity: 1;
+}
+.uedit-summernote .edui-editor-toolbarboxinner  .edui-toolbar .edui-splitbutton .edui-state-hover .edui-splitbutton-body,
+.uedit-summernote .edui-editor-toolbarboxinner  .edui-toolbar .edui-menubutton .edui-state-hover .edui-menubutton-body,
+.uedit-summernote .edui-editor-toolbarboxinner  .edui-toolbar .edui-state-hover .edui-combox-body,
+.uedit-summernote .edui-editor-toolbarboxinner  .edui-toolbar .edui-button .edui-state-hover .edui-button-wrap{
+  background-color: #fff;
+  border-color: #fff;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  box-shadow: none;
+  opacity: 1;
+}
+.uedit-summernote .edui-editor-toolbarboxinner  .edui-toolbar .edui-state-hover .edui-combox-body .edui-arrow{
+  border-color: #ccc;
+}
+.uedit-summernote .edui-editor-toolbarboxinner  .edui-toolbar .edui-splitbutton .edui-state-hover .edui-splitbutton-body .edui-box:hover,
+.uedit-summernote .edui-editor-toolbarboxinner  .edui-toolbar .edui-menubutton .edui-state-hover .edui-menubutton-body .edui-box:hover,
+.uedit-summernote .edui-editor-toolbarboxinner  .edui-toolbar .edui-state-hover .edui-combox-body .edui-box:hover,
+.uedit-summernote .edui-editor-toolbarboxinner  .edui-toolbar .edui-button .edui-state-hover .edui-button-wrap .edui-box:hover{
+  box-shadow:none;
+}
+.uedit-summernote .edui-editor-toolbarboxinner  .edui-box:hover{
+  box-shadow: #eee 0 0 2px 1px;
+}
+.uedit-summernote .edui-editor-toolbarboxinner  .edui-box{
+  background-color: #fff;
+  /*padding: 4px 6px;*/
+}
+.uedit-summernote .edui-editor-toolbarboxinner  .edui-separator{
+  pointer-events: none;
+}
+.uedit-summernote .edui-editor-toolbarboxinner  .edui-toolbar .edui-button .edui-icon{
+  pointer-events: none;
+}
+.uedit-summernote .edui-editor-toolbarboxinner  .edui-toolbar .edui-separator{
+  margin: 2px 10px;
+}

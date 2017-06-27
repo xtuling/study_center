@@ -1,0 +1,22 @@
+{
+  "name": "changyi/phpunit",
+  "description": "PHP单元测试",
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    }
+  },
+  "authors": [
+    {
+      "name": "zhoutao",
+      "email": "zhoutao@vchangyi.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "5.5.*"
+  }
+}
